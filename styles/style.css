@@ -1,0 +1,91 @@
+@media only screen and (max-width: 1920px) {
+    :root{
+        --fs-h1: 5rem;
+        --fs-h2: 2rem;
+        --fs-h3: 1.8rem;
+        --fs-h4: 1.2rem;
+    }
+
+}
+
+@media only screen and (max-width: 1280px) {
+
+    #Main{
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    #First-Page{
+        gap: 3rem;
+    }
+
+    #First-Page-Content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    #texts_first_page{
+        gap: 1.5rem;
+    }
+    #First-Page-Image{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    :root{
+        --fs-h1: 4.5rem;
+        --fs-h2: 1.8rem;
+        --fs-h3: 1.6rem;
+        --fs-h4: 1rem;
+    }
+    h1{
+        width: 200px;
+    }
+
+    .container-video {
+        width: 25rem;
+    }
+    
+    .container-video iframe {
+        height: 14rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    #Main{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    #First-Page{
+        gap: 2rem;
+    
+    }
+
+    h1{
+        width: 22rem;
+    }
+
+    h3{
+        width: 22rem;
+    }
+
+    h4{
+        width: 20rem;
+    }
+
+    .container-video {
+        width: 20rem;
+    }
+    
+    .container-video iframe {
+        height: 11.25rem;
+    }
+    
+}

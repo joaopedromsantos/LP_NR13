@@ -4,7 +4,7 @@ html, body, ul, ol, li, form, fieldset, legend
 	padding: 0;
 }
  
-h1, h2, h3, h4, h5, h6, p { margin-top: 0; }
+h1, h2, h3, h4, h5, h6, p { margin-top: 0; margin-bottom: 0; }
 fieldset, img { border: 0; }
 legend { color: #000; }
  
@@ -52,7 +52,168 @@ pre, code
 	line-height: 1.2;
 }
 
-body {
-    background: rgb(0,64,89);
-    background: linear-gradient(90deg, rgba(0,64,89,1) 0%, rgba(0,33,43,1) 20%, rgba(0,31,41,1) 50%, rgba(0,33,43,1) 80%, rgba(0,64,89,1) 100%);
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+
+:root{
+	--fs-h1: 5rem;
+	--fs-h2: 2rem;
+	--fs-h3: 1.8rem;
+	--fs-h4: 1.2rem;
+
+	--white: #E5E5E5;
+	--blue-light: #0092CC;
 }
+
+body {
+	background: rgb(0,31,41);
+	background: -moz-linear-gradient(90deg, rgba(0,31,41,1) 0%, rgba(0,15,20,1) 12%, rgba(0,9,12,1) 50%, rgba(0,15,20,1) 88%, rgba(0,31,41,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(0,31,41,1) 0%, rgba(0,15,20,1) 12%, rgba(0,9,12,1) 50%, rgba(0,15,20,1) 88%, rgba(0,31,41,1) 100%);
+	background: linear-gradient(90deg, rgba(0,31,41,1) 0%, rgba(0,15,20,1) 12%, rgba(0,9,12,1) 50%, rgba(0,15,20,1) 88%, rgba(0,31,41,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#001f29",endColorstr="#001f29",GradientType=1);
+	font-family: 'Inter', sans-serif;
+	color: var(--white);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+#First-Page-Image{
+	position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1; /* Ajuste este valor conforme necessário */
+}
+
+h1{
+	font-weight: 800;
+	font-size: var(--fs-h1);
+	line-height: 4.5rem;
+	text-align: center;
+	color: var(--blue-light);
+	padding-bottom: 1.2%;
+	width: 521px;
+}
+
+h2{
+	font-weight: 700;
+	font-size: var(--fs-h2);
+}
+h3{
+	font-weight: 700;
+	font-size: var(--fs-h3);
+	width: 25rem;
+	letter-spacing: 0.08rem;
+	line-height: 2.5rem;
+}
+h4{
+	font-weight: 100;
+	font-size: var(--fs-h4);
+	width: 80%;
+	letter-spacing: 0.08rem;
+	line-height: 1.5rem;
+	max-width: 600px;
+		
+}
+
+#Main{
+	margin-top: 4rem;
+	margin-bottom: 6rem;
+	max-width: 77.5rem;
+	min-width: 22.5rem;
+}
+
+#First-Page{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	gap: 4rem;
+
+}
+
+#First-Page-Content{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 5%;
+	z-index: 1;
+}
+
+#logo_1 {
+	width: 15rem;
+}
+
+#First-Page-Content-Left{
+	width: max-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 3rem;
+}
+
+#texts_first_page{
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+
+#texts_first_page, #texts_first_page h3, #texts_first_page h1, #texts_first_page h4 {
+	margin: 0; /* Adicione esta linha */
+}
+
+.Text-blue{
+	color: var(--blue-light);
+	font-weight: bold;
+}
+
+.Button{
+	background-color: var(--blue-light); /* Cor de fundo */
+	border: none; /* Remove bordas */
+	color: var(--white); /* Cor do texto */
+	padding: 20px 48px; /* Espaçamento interno */
+	text-align: center; /* Alinhamento do texto */
+	text-decoration: none; /* Remove sublinhado */
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	width: 18rem;
+	cursor: pointer; /* Muda o cursor para um ponteiro ao passar o mouse */
+	transition-duration: 0.4s;
+	border-radius: 100px;
+}
+
+.Button:hover {
+	background-color: #00587A; /* Cor de fundo ao passar o mouse */
+}
+  
+.Button:active {
+background-color: #004059; /* Cor de fundo ao clicar */
+transform: translateY(4px); /* Move o botão para baixo ao clicar */
+}
+
+.container-video {
+	width: 30rem;
+}
+
+.container-video iframe {
+	width: 100%;
+	height: 16.875rem;
+}
+
+
+#Second-Page{
+	margin-top: 0.1rem;
+	width: 100%;
+	height: 400px;
+	background-color: #001F29;
+}
+
