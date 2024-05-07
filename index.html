@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
 
+
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Elite NR13</title>
 </head>
 <body>
@@ -17,10 +19,10 @@
             <div id="First-Page-Content">
                 <div id="First-Page-Content-Left">
                     <div id="texts_first_page">
-                        <h3>
+                        <h3 id="Curse-Title">
                             Curso Avançado de Inspeção de Caldeiras
                         </h3>
-                        <h1>
+                        <h1 id="Curse-Name">
                             ELITE NR13
                         </h1>
                         <h4 id="h4_1">
@@ -28,9 +30,11 @@
                         </h4>
                     </div>
 
-                    <button class="Button">
-                        QUERO PARTICIPAR!
-                    </button>
+                    <a id="button_1">
+                        <button class="Button" onclick="redirecionar()">
+                            QUERO PARTICIPAR!
+                        </button>
+                    </a>
                 </div>
                 <div class="container-video">
                     <iframe src="https://www.youtube.com/embed/4s8ugv3_TD4?si=p3f7Aq64-ORDmVOk" title="YouTube video player" 
