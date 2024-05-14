@@ -8,9 +8,15 @@
 
 }
 
+@media only screen and (max-width: 1440px) {
+    #First-Page-Content{
+        gap: 5rem;
+    }
+}
+
 @media only screen and (max-width: 1280px) {
 
-    #Main{
+    #Main-First-Page{
         margin-top: 3rem;
         margin-bottom: 5rem;
     }
@@ -58,9 +64,8 @@
 
 @media only screen and (max-width: 480px) {
 
-    #Main{
+    #Main-First-Page{
         margin-top: 2rem;
-        margin-bottom: 3rem;
     }
 
     #First-Page{
@@ -81,7 +86,7 @@
     }
 
     .container-video {
-        width: 20rem;
+        width: 21rem;
     }
     
     .container-video iframe {

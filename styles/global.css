@@ -4,7 +4,7 @@ html, body, ul, ol, li, form, fieldset, legend
 	padding: 0;
 }
  
-h1, h2, h3, h4, h5, h6, p { margin-top: 0; margin-bottom: 0; }
+h1, h2, h3, h4, h5, h6, p { margin: 0 }
 fieldset, img { border: 0; }
 legend { color: #000; }
  
@@ -118,10 +118,10 @@ h4{
 		
 }
 
-#Main{
+#Main-First-Page{
 	margin-top: 4rem;
 	margin-bottom: 6rem;
-	max-width: 77.5rem;
+	max-width: 90rem;
 	min-width: 22.5rem;
 }
 
@@ -140,7 +140,7 @@ h4{
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	gap: 5%;
+	gap: 8rem;
 	z-index: 1;
 }
 
@@ -154,7 +154,7 @@ h4{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 3rem;
+	gap: 2.5rem;
 }
 
 #texts_first_page{
@@ -163,7 +163,8 @@ h4{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 2rem;
+	gap: 1.8rem;
+	width: 32rem;
 }
 
 #texts_first_page, #texts_first_page h3, #texts_first_page h1, #texts_first_page h4 {
@@ -206,14 +207,125 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 
 .container-video iframe {
 	width: 100%;
-	height: 16.875rem;
+	height: 16rem;
 }
 
 
-#Second-Page{
-	margin-top: 0.1rem;
+#Main-Second-Page{
+	margin-top: -8px;
 	width: 100%;
-	height: 400px;
 	background-color: #001F29;
+
+	display: flex;
+	justify-content: center;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 22rem;
+  border-radius: 1em;
+  background-color: var(--white);
+  color: gray;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+  text-align: start;
+  height: fit-content;
+}
+
+.header {
+  position: relative;
+  margin: -1.5em 1em 0 1em;
+  height: 12rem;
+  overflow: hidden;
+  border-radius: 1em;
+  background: linear-gradient(to right, blue, lightblue);
+  background-size: cover;
+  background-position: center;
+}
+
+#header-0{
+	background-image: url('/media/caldeira.jpeg');
+}
+#header-1{
+	background-image: url('/media/fisica.jpg');
+}
+#header-2{
+	background-image: url('/media/app-image-edit.png');
+}
+#header-3{
+	background-image: url('/media/pratico.jpeg');
+}
+#header-4{
+	background-image: url('/media/problemas.jpeg');
+}
+#header-5{
+	background-image: url('/media/marketing.jpg');
+}
+
+.content {
+  padding: 1.8em;
+}
+
+.content-button {
+	padding: 1.8em;
+	padding-top: 0rem;
+	padding-bottom: 1.8rem;
+  }
+
+.title {
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #001F29;
+}
+
+.text {
+  font-size: 1em;
+  font-weight: lighter;
+  line-height: 1.5;
+}
+
+.button-card {
+  padding: 1em;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background-color: var(--blue-light);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+  cursor: pointer; /* Muda o cursor para um ponteiro ao passar o mouse */
+  transition-duration: 0.4s;
+  width: 8rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 1em;;
+}
+
+.button-card:hover {
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+  background-color: #00587A;
+}
+
+.button-card:active {
+  opacity: 0.85;
+  background-color: #004059; /* Cor de fundo ao clicar */
+  transform: translateY(4px);
+}
+
+#Container-Cards{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 6rem;
+	row-gap: 6.5rem;
+
+	padding-top: 6.5rem;
+	padding-bottom: 6.5rem;
+	width: 80%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: fit-content;
 }
 

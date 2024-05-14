@@ -32,3 +32,39 @@ function redirecionar() {
     duration: 1000,
     distance: '10%'
   });
+
+  ScrollReveal().reveal('#card-0', {
+    origin: 'left',
+    duration: 2000,
+    distance: '20%'
+  });
+
+  ScrollReveal().reveal('#card-1', {
+    origin: 'left',
+    duration: 3000,
+    distance: '30%'
+  });
+
+  ScrollReveal().reveal('#card-2', {
+    origin: 'left',
+    duration: 4000,
+    distance: '40%'
+  });
+
+  ScrollReveal().reveal('#card-3', {
+    origin: 'left',
+    duration: 2000,
+    distance: '20%'
+  });
+
+  ScrollReveal().reveal('#card-4', {
+    origin: 'left',
+    duration: 3000,
+    distance: '30%'
+  });
+
+  ScrollReveal().reveal('#card-5', {
+    origin: 'left',
+    duration: 4000,
+    distance: '40%'
+  });
