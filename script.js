@@ -68,3 +68,20 @@ function redirecionar() {
     duration: 4000,
     distance: '40%'
   });
+
+  document.querySelectorAll('.button-card').forEach(button => {
+    button.addEventListener('click', function() {
+      const card = this.closest('.card');
+      card.classList.toggle('flipped');
+    });
+  });
+  
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('mouseleave', function() {
+      this.classList.remove('flipped');
+    });
+  });
+  
+  
+  
+  
