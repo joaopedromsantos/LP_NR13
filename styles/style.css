@@ -93,4 +93,8 @@
         height: 11.25rem;
     }
 
+    .title {
+        font-size: 14px;
+      }
+
 }
