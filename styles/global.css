@@ -345,6 +345,7 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 	height: 27rem;
 	display: flex;
 	justify-content: center;
+	overflow: hidden;
   }
   
   .carousel {
@@ -354,6 +355,7 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	gap: 1.5rem; /* Espaçamento entre os itens do carrossel */
   }
   
   .carousel__item {
@@ -369,23 +371,27 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
   }
   
   .carousel__item:nth-child(1) {
-	-webkit-animation-delay: calc(0s);
-			animation-delay: calc(0s);
+	transform: translateY(-100px);
+	-webkit-animation-delay: calc(4s * 0);
+			animation-delay: calc(4s * 0);
   }
   
   .carousel__item:nth-child(2) {
-	-webkit-animation-delay: calc(4s);
-			animation-delay: calc(4s);
+	transform: translateY(0);
+	-webkit-animation-delay: calc(4s * 1);
+			animation-delay: calc(4s * 1);
   }
   
   .carousel__item:nth-child(3) {
-	-webkit-animation-delay: calc(8s);
-			animation-delay: calc(8s);
+	transform: translateY(100px);
+	-webkit-animation-delay: calc(4s * 2);
+			animation-delay: calc(4s * 2);
   }
   
   .carousel__item:nth-child(4) {
-	-webkit-animation-delay: calc(12s);
-			animation-delay: calc(12s);
+	transform: translateY(100px);
+	-webkit-animation-delay: calc(4s * 3);
+			animation-delay: calc(4s * 3);
   }
   
   
@@ -426,6 +432,7 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 	font-weight: bold;
 	color: #001F29;
   }
+
   
   @-webkit-keyframes carousel-animate-vertical {
 	0% {
@@ -485,10 +492,38 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 
   #Container-Wrapper{
 	padding-top: 4rem;
+	padding-bottom: 1.8rem;
 	background: linear-gradient(60deg, #001F29, #004059);
 	width: 100%;
   }
 
   #Title-Wrapper{
 	letter-spacing: 2px;
+  }
+
+  #app{
+	height: 600px;
+	width: 100%;
+	background-image: url('/media/background-app2.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	color: #004059;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+
+	gap: 3rem;
+	
+  }
+
+  #title-app{
+	max-width: 800px;
+  }
+
+  #desc-app{
+	max-width: 800px;
   }
