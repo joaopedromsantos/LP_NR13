@@ -336,6 +336,7 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 	flex-direction: row;
 	flex-wrap: wrap;
 	height: fit-content;
+	overflow-x: hidden;
 }
 
 
@@ -346,6 +347,7 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 	display: flex;
 	justify-content: center;
 	overflow: hidden;
+	overflow-x: hidden;
   }
   
   .carousel {
@@ -491,6 +493,7 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
   }
 
   #Container-Wrapper{
+	overflow-x: hidden;
 	padding-top: 4rem;
 	padding-bottom: 1.8rem;
 	background: linear-gradient(60deg, #001F29, #004059);
@@ -511,6 +514,7 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	overflow-x: hidden;
   }
 
   #app{
@@ -518,10 +522,8 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-left: 10%;
-	padding-right: 10%;
-
 	gap: 3rem;
+	overflow-x: hidden;
 	
   }
 
@@ -531,4 +533,8 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 
   #desc-app{
 	max-width: 800px;
+  }
+
+  body{
+	overflow-x: hidden;
   }
