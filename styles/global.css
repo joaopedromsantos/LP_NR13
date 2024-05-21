@@ -501,20 +501,25 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 	letter-spacing: 2px;
   }
 
-  #app{
-	height: 600px;
-	width: 100%;
+  #container-app{
 	background-image: url('/media/background-app2.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	padding-top: 4rem;
+	padding-bottom: 12rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+  }
 
+  #app{
 	color: #004059;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	text-align: left;
+	padding-left: 10%;
+	padding-right: 10%;
 
 	gap: 3rem;
 	
