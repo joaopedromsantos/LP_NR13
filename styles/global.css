@@ -52,7 +52,7 @@ pre, code
 	line-height: 1.2;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 
 :root{
@@ -85,8 +85,9 @@ body {
 
 #First-Page-Image{
 	position: absolute;
+	
     right: 0;
-    top: 0;
+	top: -23.5px;
     z-index: 1; /* Ajuste este valor conforme necessário */
 }
 
@@ -506,7 +507,7 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 	background-size: cover;
 	background-position: center;
 	padding-top: 4rem;
-	padding-bottom: 12rem;
+	padding-bottom: 6rem;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -516,16 +517,82 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 	color: #004059;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	gap: 3rem;
+	padding-left: 10%;
+	padding-right: 10%;
 	
   }
 
   #title-app{
-	max-width: 800px;
+	max-width: 600px;
+	text-align: left;
   }
 
   #desc-app{
 	max-width: 800px;
+	text-align: left;
+	margin-left: -14%;
+	font-size: 1.2rem;
   }
+  #desc-app ul {
+	list-style: none; /* Remove os marcadores padrão */
+	padding: 0; /* Remove o padding padrão */
+}
 
+#desc-app li {
+	position: relative; /* Necessário para posicionar o marcador personalizado */
+	padding-left: 20px; /* Espaço para o marcador personalizado */
+	margin-bottom: 2rem; /* Espaçamento entre os itens */
+	
+}
+
+#li-1{
+	max-width: 800px;
+}
+
+#li-2{
+	max-width: 600px;
+}
+
+#li-3{
+	max-width: 390px;
+}
+
+#desc-app li::before {
+	content: '\2022'; /* Código do caractere para o marcador personalizado (•) */
+	position: absolute; /* Posiciona o marcador fora do fluxo normal */
+	left: 0; /* Alinha o marcador à esquerda */
+	color: #001F29; /* Cor do marcador */
+	font-size: 1.5em; /* Tamanho do marcador */
+	line-height: 20px; /* Alinha o marcador verticalmente com o texto */
+}
+
+#app_1 {
+	width: 60%;
+
+}
+
+#title-container-app{
+	margin-left: -14%;
+}
+
+#image-app{
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	margin-right: -14%;
+	margin-top: -13rem;
+	
+}
+
+
+#button_2{
+	text-align: start;
+	margin-left: -7%;
+	margin-top: -10rem;
+}
+
+#Main-Third-Page{
+	width: 100%;
+	height: 40rem;
+}
