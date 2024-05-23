@@ -104,6 +104,50 @@ function redirecionar() {
     duration: 2500,
     distance: '50%'
   });
+
+  // Animation Biography
+
+  ScrollReveal().reveal('#bio-title-mobile', {
+    origin: 'left',
+    duration: 1500,
+    distance: '30%'
+  });
+
+  ScrollReveal().reveal('#bio-title', {
+    origin: 'left',
+    duration: 2100,
+    distance: '30%'
+  });
+
+  ScrollReveal().reveal('#bio-image', {
+    origin: 'left',
+    duration: 1800,
+    distance: '35%'
+  });
+
+  ScrollReveal().reveal('#link-h3', {
+    origin: 'left',
+    duration: 2100,
+    distance: '40%'
+  });
+
+  ScrollReveal().reveal('#bio-text-1', {
+    origin: 'left',
+    duration: 2400,
+    distance: '45%'
+  });
+
+  ScrollReveal().reveal('#bio-text-2', {
+    origin: 'left',
+    duration: 2700,
+    distance: '50%'
+  });
+
+  ScrollReveal().reveal('#bio-text-3', {
+    origin: 'left',
+    duration: 3100,
+    distance: '50%'
+  });
   
   
   
