@@ -52,7 +52,7 @@ pre, code
 	line-height: 1.2;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
 
@@ -595,23 +595,21 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 }
 
 #Main-Third-Page{
-	padding-left: 10%;
-	padding-right: 10%;
 	padding-top: 6rem;
 	padding-bottom: 6rem;
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	gap: 5rem;
 }
 
 #tutor-image{
-	width: 36rem;
+	width: max-content;
 	display: flex;
     align-items: end;
     flex-direction: column;
     justify-content: center;
-    padding-right: 0rem;
 }
 
 #link-insta{
@@ -629,7 +627,7 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 }
 
 #bio-image{
-	width: 60%;
+	width: 100%;
 	
 }
 
@@ -653,7 +651,7 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 
 #bio-right{
 	display: flex;
-	align-items: end;
+	align-items: center;
 	flex-direction: column;
 	justify-content: center;
 	gap: 2rem;
@@ -661,7 +659,6 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 
 #link-h3{
 	width: min-content;
-	padding-right: 9%;
 }
 
 #bio-title-mobile {
