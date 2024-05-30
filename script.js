@@ -148,6 +148,34 @@ function redirecionar() {
     duration: 3100,
     distance: '50%'
   });
-  
-  
+
+
+// Contador
+const dataAlvo = new Date(2024, 5, 17, 0, 0, 0); // Alterar aqui quando tiver novo evento -> ano, mes, dia, hora, min, seg
+
+function atualizarContador() {
+  const agora = new Date();
+  const diferenca = dataAlvo - agora;
+
+  // Calculando tempo restante
+  const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+  const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+  const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+
+  // Atualizando o HTML
+  document.getElementById('dias').innerText = dias;
+  document.getElementById('horas').innerText = horas;
+  document.getElementById('minutos').innerText = minutos;
+  document.getElementById('segundos').innerText = segundos;
+
+  // Quando o contador chegar a zero
+  if (diferenca < 0) {
+    clearInterval(intervalo);
+    document.getElementById('contador').innerHTML = 'O evento começou!';
+  }
+}
+
+// Atualize o contador a cada 1 segundo
+const intervalo = setInterval(atualizarContador, 1000);
   
