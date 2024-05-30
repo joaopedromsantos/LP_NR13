@@ -266,34 +266,32 @@
     
     }
 
-    /* carrossel */
-    /* #Blog {
-        padding-top: 12vh;
-        padding-bottom: 4%;
-        padding-left: 8%;
-        padding-right: 8%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 2rem;
+    /* Container */
+    .carousel-insta img {
+        max-width: 100%;
+        height: 100%;
+      }
+
+    .instagram {
+        max-width: var(--max-width-post);
+        width: 320px;
+    }
+
+    .carousel__wrapper {
+        height: 417.4px;
+    }
+    .instagram__media{
+        height: 417px;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    body{
+        background-image: linear-gradient(90deg, rgb(0,20,26),rgb(0,21,28));
     }
     
-    #Text-Blog {
-        width: 80%;
-    }
-    .instagram__media {
-        max-height: 260px;
-    }
-    .instagram {
-        max-width: 260px;
-        width: 260px;   
-    }
-    .carousel img {
-        max-width: 260px;
-    }
-    .carousel .item {
-        max-width: 260px;
-    } */
 }
 
 @media only screen and (max-width: 480px) {
