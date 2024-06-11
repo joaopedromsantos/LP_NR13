@@ -12,7 +12,7 @@ input, textarea, select, button
 {
 	font-size: 110%;
 	line-height: 1.1;
-	font-family: helvetica, arial, sans-serif;
+	font-family: 'Inter', sans-serif;
 }
  
 button
@@ -47,7 +47,7 @@ sub { vertical-align: text-bottom; }
  
 pre, code
 {
-	font-family: "Courier New", monospace, serif;
+	font-family: 'Inter', sans-serif;
 	font-size: 100%;
 	line-height: 1.2;
 }
@@ -791,3 +791,159 @@ strong{
 	margin-top: 3rem;
 }
 
+#Form{
+	background-color: #001F29;
+	height: max-content;
+	width: 100%;
+	padding-top: 3rem;
+	padding-bottom: 4rem;
+	padding-left: 10%;
+	padding-right: 10%;
+
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+
+	font-family: 'Inter', sans-serif;
+}
+
+#container-form{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	gap: 5rem;
+}
+
+#logo-form{
+	width: min-content;
+}
+
+#logo-form h1{
+	width: min-content;
+}
+
+
+.form-group {
+	text-align: left;
+	width: 100%;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+	text-align: left;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+textarea.form-control {
+    height: auto;
+}
+
+#Form-Button {
+    text-decoration: none;
+}
+
+
+.Button_Form {
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #28a745;
+    border: 1px solid #28a745;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    cursor: pointer;
+
+	width: 100%;
+}
+
+#Form-Button{
+	width: 100%;
+}
+
+.Button_Form:hover {
+    color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.Button_Form:active {
+    color: #fff;
+    background-color: #1e7e34;
+    border-color: #1c7430;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+
+#Form-Contact{
+	text-align: left;
+}
+
+#left-form{
+	width: 25%;
+	min-width: 10rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+}
+
+#right-form{
+	width: 25%;
+	min-width: 14rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	gap: 1.5rem;
+}
+
+#div-footer{
+	width: 100%;
+	height: 3.5rem;
+	background-color: #000B0C;
+	color: var(--white);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#div-footer h4{
+	font-size: 1rem;
+}

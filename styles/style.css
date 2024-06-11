@@ -12,6 +12,9 @@
     #First-Page-Content{
         gap: 5rem;
     }
+    #container-form{
+        gap: 4rem;
+    }
 }
 
 @media only screen and (max-width: 1280px) {
@@ -120,6 +123,16 @@
         width: 100%;
     }
 
+    
+    #container-form{
+        gap: 3rem;
+    }
+    
+    #logo-form h1{
+        font-size: 4rem;
+        
+    }
+
 }
 
 @media only screen and (max-width: 1024px){
@@ -217,6 +230,50 @@
         font-size: 1.4rem;
     }
 
+    #logo-form h1{
+        font-size: 3rem;
+        
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    #logo-form h1{
+        font-size: 4rem;
+        
+    }
+
+    #Form-Contact{
+        text-align: center;
+    }
+
+    #container-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    #left-form{
+        width: 100%;
+        min-width: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
+    #right-form{
+        width: 100%;
+        min-width: 14rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.5rem;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -323,6 +380,10 @@
     .rotulo{
         font-size: 1rem;
     }
+
+    #div-footer h4{
+        font-size: 0.8rem;
+    }
     
     
     
@@ -377,19 +438,8 @@
        width:80%;
     }
 
-    /* carrossel
-    .instagram__media {
-        max-height: 220px;
+    #div-footer h4{
+        font-size: 0.6rem;
     }
-    .instagram {
-        max-width: 220px;
-        width: 220px;   
-    }
-    .carousel img {
-        max-width: 220px;
-    }
-    .carousel .item {
-        max-width: 220px;
-    } */
 
 }
