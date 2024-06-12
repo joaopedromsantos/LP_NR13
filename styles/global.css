@@ -252,22 +252,22 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 }
 
 #header-0{
-	background-image: url('/media/caldeira.jpeg');
+	background-image: url('/media/caldeira.webp');
 }
 #header-1{
-	background-image: url('/media/fisica.jpg');
+	background-image: url('/media/fisica.webp');
 }
 #header-2{
-	background-image: url('/media/app-image-edit.png');
+	background-image: url('/media/app-image-edit.webp');
 }
 #header-3{
-	background-image: url('/media/pratico.jpeg');
+	background-image: url('/media/pratico.webp');
 }
 #header-4{
-	background-image: url('/media/problemas.jpeg');
+	background-image: url('/media/problemas.webp');
 }
 #header-5{
-	background-image: url('/media/marketing.jpg');
+	background-image: url('/media/marketing.webp');
 }
 
 .content {
@@ -504,7 +504,7 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
   }
 
   #container-app{
-	background-image: url('/media/background-app2.png');
+	background-image: url('/media/background-app2.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -695,7 +695,7 @@ strong{
 	justify-content: center;
 
 
-	background-image: url('/media/bg-2.png');
+	background-image: url('/media/bg-2.webp');
 	background-size: cover; /* Garante que a imagem cubra todo o elemento */
 	background-repeat: no-repeat; /* Evita que a imagem se repita */
 	background-position: center; /* Centraliza a imagem no elemento */

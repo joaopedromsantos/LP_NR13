@@ -1,5 +1,5 @@
 function redirecionar() {
-    window.open("https://typebot.co/elite-nr13-bot", "_blank");
+    window.open("https://typebot.co/elite-nr13", "_blank");
   };
 
   // Animações
@@ -207,3 +207,15 @@ function atualizarContador() {
 // Atualize o contador a cada 1 segundo
 const intervalo = setInterval(atualizarContador, 1000);
   
+
+function SendMail() {
+  var params = {
+    form_name: document.getElementById("Form-Name").value,
+    form_email: document.getElementById("Form-Email").value,
+    form_tell: document.getElementById("Form-Tell").value,
+    form_message: document.getElementById("Form-Message").value
+  }
+  emailjs.send("service_r2tjavf", "template_ocxqg5o", params).then(function (res) {
+    alert("Sucesso! " + res.status);
+  })
+}

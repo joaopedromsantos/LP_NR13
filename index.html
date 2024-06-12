@@ -13,6 +13,15 @@
 
 
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+          emailjs.init({
+            publicKey: "AUvxDwGzmOYjAhW3G",
+          });
+      })();
+  </script>
+
 
     <title>Elite NR13</title>
 </head>
@@ -162,7 +171,7 @@
               </ul>
             </div>
             <div id="image-app">
-              <img id="app_1" src="media/NOTEBOOK-G.png" />
+              <img id="app_1" src="media/NOTEBOOK-G.webp" />
             </div>
             <a id="button_2">
               <button class="Button" onclick="redirecionar()">
@@ -203,13 +212,13 @@
       <div class="container">
         <aside class="carousel-insta">
           <div class="carousel__wrapper">
-            <a href="https://www.instagram.com/reel/C59vEuULpEU/" target="_blank" class="item" id="slide-1"><img src="media/insta-1.png"/></a>
-            <a href="https://www.instagram.com/reel/C4ZP-g1La7m/" target="_blank" class="item" id="slide-2"><img src="media/insta-2.png"/> <span class="visually-hidden">Acessar vídeo no Instagram</span></a>
-            <a href="https://www.instagram.com/reel/C6Y-JgirtHR/" target="_blank" class="item" id="slide-3"><img src="media/insta-3.png"/><span class="visually-hidden">Acessar vídeo no Instagram</span></a>
-            <a href="https://www.instagram.com/reel/C4aYS9LrHcb/" target="_blank" class="item" id="slide-4"><img src="media/insta-4.png"/><span class="visually-hidden">Acessar vídeo no Instagram</span></a>
-            <a href="https://www.instagram.com/reel/C59vEuULpEU/" target="_blank" class="item" id="slide-5"><img src="media/insta-1.png"/><span class="visually-hidden">Acessar vídeo no Instagram</span></a>
-            <a href="https://www.instagram.com/reel/C4ZP-g1La7m/" target="_blank" class="item" id="slide-6"><img src="media/insta-2.png"/><span class="visually-hidden">Acessar vídeo no Instagram</span></a>
-            <a href="https://www.instagram.com/reel/C6Y-JgirtHR/" target="_blank" class="item" id="slide-7"><img src="media/insta-3.png"/><span class="visually-hidden">Acessar vídeo no Instagram</span></a>
+            <a href="https://www.instagram.com/reel/C59vEuULpEU/" target="_blank" class="item" id="slide-1"><img src="media/insta-1.webp"/></a>
+            <a href="https://www.instagram.com/reel/C4ZP-g1La7m/" target="_blank" class="item" id="slide-2"><img src="media/insta-2.webp"/> <span class="visually-hidden">Acessar vídeo no Instagram</span></a>
+            <a href="https://www.instagram.com/reel/C6Y-JgirtHR/" target="_blank" class="item" id="slide-3"><img src="media/insta-3.webp"/><span class="visually-hidden">Acessar vídeo no Instagram</span></a>
+            <a href="https://www.instagram.com/reel/C4aYS9LrHcb/" target="_blank" class="item" id="slide-4"><img src="media/insta-4.webp"/><span class="visually-hidden">Acessar vídeo no Instagram</span></a>
+            <a href="https://www.instagram.com/reel/C59vEuULpEU/" target="_blank" class="item" id="slide-5"><img src="media/insta-1.webp"/><span class="visually-hidden">Acessar vídeo no Instagram</span></a>
+            <a href="https://www.instagram.com/reel/C4ZP-g1La7m/" target="_blank" class="item" id="slide-6"><img src="media/insta-2.webp"/><span class="visually-hidden">Acessar vídeo no Instagram</span></a>
+            <a href="https://www.instagram.com/reel/C6Y-JgirtHR/" target="_blank" class="item" id="slide-7"><img src="media/insta-3.webp"/><span class="visually-hidden">Acessar vídeo no Instagram</span></a>
           </div>
         </aside>
         <article class="instagram">
@@ -308,25 +317,25 @@
         </div>
         <form id="left-form">
           <div class="form-group">
-            <label for="Name">Nome</label>
+            <label for="Name" id="Name">Nome</label>
             <input type="text" class="form-control" id="Form-Name">
           </div>
           <div class="form-group">
-            <label for="Tell">Telefone</label>
+            <label for="Tell" id="Tell">Telefone</label>
             <input type="text" class="form-control" id="Form-Tell">
           </div>
           <div class="form-group">
-            <label for="Email">Email</label>
-            <input type="text" class="form-control" id="Form-Email">
+            <label for="Email" id="Email">Email</label>
+            <input type="email" class="form-control" id="Form-Email">
           </div>
         </form>
         <form id="right-form">
           <div class="form-group">
-              <label for="Form-Mensage">Mensagem</label>
-              <textarea type="text" class="form-control" id="Form-Mensage" rows="5"></textarea>
+              <label for="Form-Menssage" id="Message">Mensagem</label>
+              <textarea type="text" class="form-control" id="Form-Message" rows="5"></textarea>
           </div>
           <a id="Form-Button">
-              <button class="Button_Form" type="button" onclick="">
+              <button class="Button_Form" type="button" onclick="SendMail()">
                   Enviar!
               </button>
           </a>
@@ -339,6 +348,7 @@
       </h4>
     </footer>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
