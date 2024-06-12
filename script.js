@@ -216,6 +216,6 @@ function SendMail() {
     form_message: document.getElementById("Form-Message").value
   }
   emailjs.send("service_r2tjavf", "template_ocxqg5o", params).then(function (res) {
-    alert("Sucesso! " + res.status);
+    alert("Enviado com Sucesso!");
   })
 }
