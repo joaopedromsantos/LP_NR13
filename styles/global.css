@@ -146,7 +146,7 @@ h4{
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	gap: 8rem;
+	gap: 12rem;
 	z-index: 1;
 }
 
@@ -164,6 +164,7 @@ h4{
 }
 
 #texts_first_page{
+	width: min-content;
 	height: fit-content;
 	display: flex;
 	flex-direction: column;
@@ -206,13 +207,10 @@ background-color: #004059; /* Cor de fundo ao clicar */
 transform: translateY(4px); /* Move o botão para baixo ao clicar */
 }
 
-.container-video {
-	width: 30rem;
-}
-
 .container-video iframe {
-	width: 100%;
-	height: 16rem;
+	border-radius: 12px;
+	width: 15.8rem;
+	height: 28rem;
 }
 
 
@@ -601,13 +599,13 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 5rem;
+	gap: 10rem;
 }
 
 #tutor-image{
 	width: max-content;
 	display: flex;
-    align-items: end;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
 }
@@ -617,17 +615,18 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 }
 
 #bio-left{
-	text-align: start;
+	width: 50%;
+	text-align: center;
 	display: flex;
 	flex-direction: column;
-	align-items: left;
+	align-items: center;
 	justify-content: center;
 	gap: 2rem;
 	
 }
 
 #bio-image{
-	width: 100%;
+	width: 14rem;
 	
 }
 
@@ -639,12 +638,42 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 }
 
 #bio-desc{
+	font-weight: 500;
+	font-size: 1.4rem;
+	color: #c2c2c2;
+	max-width: none;
+}
+
+#bio-data-container{
+	border: 2px solid var(--blue-light);
+	border-radius: 12px;
+	padding-top: 1rem;
+	padding-bottom: 1.5rem;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 3rem;
+	min-width: 17rem;
+}
+
+.bio-data{
 	display: flex;
 	flex-direction: column;
-	align-items: left;
-	justify-content: center;
-	gap: 2rem;
-	font-weight: 800;
+	align-items: center;
+	gap: 0.5rem;
+	width: 13rem;
+}
+
+.bio-data-number{
+	font-weight: bold;
+	font-size: 4rem;
+}
+
+.bio-data-text{
+	font-size: 1rem;
+	font-weight: 600;
 	color: #c2c2c2;
 }
 
@@ -659,6 +688,7 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 
 #link-h3{
 	width: min-content;
+	font-size: 1.5rem;
 }
 
 #bio-title-mobile {

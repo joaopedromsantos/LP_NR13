@@ -224,7 +224,7 @@
     }
     
     #bio-image{
-        width: 60%;
+        width: 10rem;
     }
     #link-h3{
         font-size: 1.4rem;
@@ -286,13 +286,10 @@
     h1{
         width: 200px;
     }
-
-    .container-video {
-        width: 25rem;
-    }
     
     .container-video iframe {
-        height: 14rem;
+        width: 14rem;
+	    height: 24.8rem;
     }
 
     #title-app{
@@ -411,15 +408,7 @@
     h4{
         width: 20rem;
     }
-
-    .container-video {
-        width: 21rem;
-    }
     
-    .container-video iframe {
-        height: 11.25rem;
-    }
-
     .title {
         font-size: 14px;
       }
