@@ -137,6 +137,10 @@
 
 @media only screen and (max-width: 1024px){
 
+    #poster-image{
+        width: 20rem;
+    }
+
     #app{
         align-items: center;
     }
@@ -388,6 +392,10 @@
 
 @media only screen and (max-width: 480px) {
 
+    #poster-image{
+        width: 16rem;
+    }
+
     #Main-First-Page{
         margin-top: 2rem;
     }
@@ -419,8 +427,8 @@
     }
 
     #Main-Third-Page{
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 4%;
+        padding-right: 4%;
     }
 
     #tutor-image{

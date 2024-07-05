@@ -219,3 +219,49 @@ function SendMail() {
     alert("Enviado com Sucesso!");
   })
 }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const counters = document.querySelectorAll('.bio-data-number');
+
+  const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5,
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              const countValue = parseFloat(entry.target.textContent.replace(/[^\d]/g, ''));
+              animateCountUp(entry.target, countValue);
+              observer.unobserve(entry.target);
+          }
+      });
+  }, options);
+
+  counters.forEach(counter => {
+      observer.observe(counter);
+  });
+});
+
+function animateCountUp(element, targetValue) {
+  const duration = 2000;
+  const interval = 10;
+  const steps = duration / interval;
+  const increment = targetValue / steps;
+
+  let currentValue = 0;
+  const updateCounter = () => {
+      currentValue += increment;
+      element.textContent = Math.floor(currentValue);
+
+      if (currentValue < targetValue) {
+          requestAnimationFrame(updateCounter);
+      } else {
+          element.textContent = targetValue;
+      }
+  };
+
+  requestAnimationFrame(updateCounter);
+}
