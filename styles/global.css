@@ -778,6 +778,7 @@ strong{
 	justify-content: center;
 
 	margin-top: 3rem;
+	margin-bottom: 3rem;
 }
 
 #Texts-title h3{
@@ -806,7 +807,7 @@ strong{
 	align-items: center;
 	justify-content: center;
 	gap: 8rem;
-	margin-top: 6rem;
+	margin-top: 3rem;
 	
 	font-size: 1rem;
 }
@@ -851,6 +852,90 @@ strong{
 
 #button_3{
 	margin-top: 3rem;
+}
+
+#Main-Six-Page {
+	width: 100%;
+	padding: 4rem;
+	padding-left: 18%;
+	padding-right: 18%;
+	background-color: #001F29;
+}
+
+#Title-Benefits{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#Text-Title-Beneftis{
+	font-size: 2rem;
+	letter-spacing: 4px;
+	color: #0092CC;
+	width: 100%;
+	min-width: 320px;
+}
+
+.Rounded{
+	height: 2px;
+	border-radius: 20px;
+	width: 100%;
+	color: #0092CC;
+	background-color: #0092CC;
+}
+
+.Container-Benefits{
+	width: 100%;
+	max-height: min-content;
+	margin-top: 6rem;
+	margin-bottom: 4rem;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: left;
+
+	padding-left: 4rem;
+	padding-right: 4rem;
+	gap: 8rem;
+}
+
+.Benefits-Image{
+	border-radius: 8px;
+	max-height: 26rem;
+	max-width: 20rem;
+	width: auto;
+	height: auto;
+}
+
+.Box-Text-Benefits{
+
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+}
+
+.Box-Text-Benefits h2{
+	font-size: 1.6em;
+	color: var(--white);
+	font-weight: 700;
+}
+
+.Box-Text-Benefits h3{
+	font-size: 1.2rem;
+	color: #c2c2c2;
+	font-weight: 200;
+	margin-top: 2rem;
+	width: 100%;
+	line-height: 2rem;
+}
+
+#Main-Seven-Page{
+	height: 2rem;
+	width: 100%;
+	background-color: #000B0C;
 }
 
 #Form{
@@ -1010,30 +1095,14 @@ textarea.form-control {
 	font-size: 1rem;
 }
 
-
-
 /* POSTER */
-#Event-Publication{
-	width: 100%;
-	background-color: #090C10;
-	padding-top: 4rem;
-	padding-bottom: 4rem;
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 1rem;
-}
-
-
 #container-image{
 	display: flex;
 	border-radius: 6px;
-	border: 2px solid #DFA64E;
+	border: 2px solid #0092CC;
 }
 
 #poster-image{
-	width: 30rem;
-	
+	border-radius: 6px;
+	width: 28rem;
 }

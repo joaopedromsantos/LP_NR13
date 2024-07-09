@@ -119,6 +119,18 @@ function redirecionar() {
     distance: '30%'
   });
 
+  ScrollReveal().reveal('#bio-desc', {
+    origin: 'left',
+    duration: 1400,
+    distance: '30%'
+  });
+
+  ScrollReveal().reveal('#bio-data-container', {
+    origin: 'left',
+    duration: 1600,
+    distance: '30%'
+  });
+
   ScrollReveal().reveal('#bio-image', {
     origin: 'left',
     duration: 1800,
@@ -131,23 +143,33 @@ function redirecionar() {
     distance: '40%'
   });
 
-  ScrollReveal().reveal('#bio-text-1', {
+  // Page Poster
+  ScrollReveal().reveal('#container-image', {
     origin: 'left',
-    duration: 1500,
+    duration: 1800,
+    distance: '80%'
+  });
+
+  // Page Benefits
+  ScrollReveal().reveal('#Title-Benefits', {
+    origin: 'left',
+    duration: 1600,
+    distance: '40%'
+  });
+
+  ScrollReveal().reveal('#Container-Benefits-Reverse', {
+    origin: 'left',
+    duration: 2100,
     distance: '45%'
   });
 
-  ScrollReveal().reveal('#bio-text-2', {
+  ScrollReveal().reveal('#Container-Benefits', {
     origin: 'left',
-    duration: 1800,
+    duration: 2400,
     distance: '50%'
   });
 
-  ScrollReveal().reveal('#bio-text-3', {
-    origin: 'left',
-    duration: 2100,
-    distance: '50%'
-  });
+
 
   // Page Contador
   ScrollReveal().reveal('#img-calendar', {
