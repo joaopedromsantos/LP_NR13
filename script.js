@@ -169,6 +169,31 @@ function redirecionar() {
     distance: '50%'
   });
 
+  // Page Pricing
+  ScrollReveal().reveal('#Text-Pricing', {
+    origin: 'left',
+    duration: 1400,
+    distance: '40%'
+  });
+
+  ScrollReveal().reveal('#Left-Card-Pricing', {
+    origin: 'left',
+    duration: 1600,
+    distance: '30%'
+  });
+
+  ScrollReveal().reveal('#Right-Card-Pricing', {
+    origin: 'left',
+    duration: 2200,
+    distance: '50%'
+  });
+
+  ScrollReveal().reveal('#Desc-Pricing', {
+    origin: 'left',
+    duration: 2400,
+    distance: '50%'
+  });
+
 
 
   // Page Contador

@@ -36,6 +36,10 @@
         margin-top: 4rem;
         margin-bottom: 4rem;
     }
+
+    #Desc-Pricing{
+        gap: 4rem;
+    }
     
 }
 
@@ -159,6 +163,28 @@
         gap: 4rem;
     }
 
+    #Desc-Pricing{
+        gap: 2.5rem;
+    
+        padding: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    
+    #Desc-Pricing h2{
+        font-size: 1.6rem;
+        width: auto;
+        text-wrap: nowrap;
+        font-weight: 800;
+        letter-spacing: 2px;
+        line-height: 3rem;
+    }
+
+    #Text-Container{
+        font-size: 1.4rem;
+    }
+
 }
 
 @media only screen and (max-width: 1024px){
@@ -263,6 +289,26 @@
     #logo-form h1{
         font-size: 3rem;
         
+    }
+
+    #Desc-Pricing{
+        flex-direction: column;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    #line{
+        height: 4px;
+        width: 100%;
+    }
+
+    #Container-Right-Desc-pricing{
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Text-Container{
+        text-align: center;
     }
 
 }
@@ -454,8 +500,40 @@
         font-size: 0.8rem;
     }
     
+    .Card-Pricing{
+        width: 20rem;
+    }
+
+    .Card-Pricing h4{
+        font-size: 0.8rem;
+        color: #c2c2c2;
+        width: auto;
+    }
     
+    .Card-Pricing h3{
+        font-size: 1.4rem;
+        width: auto;
+    }
     
+    .Card-Pricing h2{
+        font-size: 2rem;
+        width: auto;
+    }
+
+    #Desc-Pricing{
+        width: 28rem;
+    }
+
+    #Text-Treatment{
+        width: 16rem;
+    }
+    
+}
+
+@media only screen and (max-width: 580px) {
+    #Desc-Pricing{
+        width: 24rem;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -532,6 +610,20 @@
         color: #0092CC;
         width: 100%;
         min-width: 200px;
+    }
+
+    .Card-Pricing{
+        width: 18.5rem;
+    }
+
+    #Desc-Pricing{
+        width: 21rem;
+    }
+
+    #Desc-Pricing h2 {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        text-wrap: wrap;
     }
 
 }

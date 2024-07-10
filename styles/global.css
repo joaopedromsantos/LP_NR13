@@ -933,10 +933,228 @@ strong{
 }
 
 #Main-Seven-Page{
-	height: 2rem;
+	padding: 4rem;
+	padding-left: 10%;
+	padding-right: 10%;
 	width: 100%;
 	background-color: #000B0C;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	gap: 6rem;
+	overflow: hidden;
 }
+
+#Text-Pricing{
+	text-align: center;
+	max-width: 58rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2.5rem;
+
+}
+
+#Text-Pricing h2{
+	font-size: 2.4rem;
+	color: var(--white);
+	letter-spacing: 2px;
+}
+
+#Text-Pricing h4 {
+	font-size: 1.2rem;
+	color: #c2c2c2;
+	font-weight: 100;
+}
+
+#Cards-Pricing{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 6rem;
+
+    flex-wrap: wrap;
+	
+}
+
+.Card-Pricing{
+	border-radius: 24px;
+	width: 30rem;
+	height: 18.9rem;
+	padding: 2rem;
+	padding-top: 1.5rem;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 2rem;
+
+	background-color: #002E3D;
+}
+
+.Card-Pricing h4{
+	font-size: 1rem;
+	color: #c2c2c2;
+	width: auto;
+}
+
+.Card-Pricing h3{
+	font-size: 1.6rem;
+	width: auto;
+}
+
+.Card-Pricing h2{
+	font-size: 2.5rem;
+	width: auto;
+}
+
+.button_4{
+	font-style: 1.6rem;
+	width: 100%;
+
+}
+
+#button_4{
+	padding: 12px 12px;
+	width: 100%;
+	border-radius: 12px;
+	font-size: 1.4rem;
+	min-width: 0px;
+}
+
+#button_4-2{
+	padding: 12px 12px;
+	border-radius: 12px;
+	width: 100%;
+	font-size: 1.4rem;
+	min-width: 0px;
+}
+
+
+.First-Line{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#Text-Line{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#Second-Line-Left{
+	display: flex;
+	align-items: start;
+}
+
+#Second-Line-Right{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	gap: 0.4rem;
+}
+
+#Second-Line-Left h3{
+	text-decoration: line-through;
+	color: #873D48;
+}
+
+#Desc-Pricing{
+	background-color: var(--white);
+	border-radius: 24px;
+	color: #002E3D;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 7rem;
+
+	padding: 3rem;
+	padding-left: 4rem;
+	padding-right: 4rem;
+}
+
+
+#Desc-Pricing h2{
+	font-size: 2rem;
+	width: auto;
+	text-wrap: nowrap;
+	font-weight: 800;
+	letter-spacing: 2px;
+	line-height: 3rem;
+}
+
+#line{
+	width: 4px;
+	background-color: #002E3D;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	height: 22rem;
+	border-radius: 24px;
+}
+
+#Container-Desc{
+	margin-bottom: 1.5rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+
+	gap: 0.8rem;
+
+	width: auto;
+}
+
+.Line-Desc{
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	
+	width: auto;
+}
+
+.Line-Desc h5{
+	font-size: 1rem;
+
+}
+
+#Container-Right-Desc-pricing{
+	text-align: start;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #Form{
 	background-color: #001F29;
