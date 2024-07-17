@@ -3,6 +3,12 @@ function redirecionar() {
   };
 
   // Animações
+  ScrollReveal().reveal('#Section-Poster-Image', {
+    origin: 'left',
+    duration: 1200,
+    distance: '40%'
+  });
+
   ScrollReveal().reveal('#Curse-Name', {
     origin: 'left',
     duration: 1300,

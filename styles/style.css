@@ -45,10 +45,6 @@
 
 @media only screen and (max-width: 1280px) {
 
-    #Main-First-Page{
-        margin-top: 3rem;
-        margin-bottom: 5rem;
-    }
 
     #First-Page{
         gap: 3rem;
@@ -118,6 +114,7 @@
     
     #button_2{
         margin-top: -0.5rem;
+        margin-left: 0px;
     }
 
     #Main-Third-Page{
@@ -183,6 +180,42 @@
 
     #Text-Container{
         font-size: 1.4rem;
+    }
+
+    #Section-Poster-Image{
+        width: 32rem;
+    }
+
+    #Container-Cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        row-gap: 6.5rem;
+        max-width: 80rem;
+    
+        padding-top: 6.5rem;
+        padding-bottom: 4.5rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+
+    .card {
+        width: 22rem;
+      }
+
+    #button-second-page{
+        margin-top: -2.5rem;
+    }
+
+    #title-benefits-1 {
+        width: 90%;
+    }
+
+    #benefits-1 {
+        min-width: 220px;
+        font-size: 1.6rem;
     }
 
 }
@@ -382,7 +415,7 @@
         line-height: 2rem;
     }
 
-    #Text-Title-Beneftis{
+    .Text-Title-Beneftis{
         font-size: 1.6rem;
         letter-spacing: 2px;
         color: #0092CC;
@@ -527,6 +560,18 @@
     #Text-Treatment{
         width: 16rem;
     }
+
+    #Section-Poster-Image{
+        width: 24rem;
+    }
+
+    .card {
+        width: 18rem;
+      }
+
+    #title-benefits-1 {
+        width: 90vw;
+    }
     
 }
 
@@ -604,7 +649,7 @@
         line-height: 2rem;
     }
 
-    #Text-Title-Beneftis{
+    .Text-Title-Beneftis{
         font-size: 1.5rem;
         letter-spacing: 2px;
         color: #0092CC;
@@ -624,6 +669,14 @@
         font-size: 1.4rem;
         line-height: 2rem;
         text-wrap: wrap;
+    }
+
+    #Section-Poster-Image{
+        width: 80%;
+    }
+
+    .Line-Desc h5{
+        font-size: 0.8rem;
     }
 
 }

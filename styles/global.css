@@ -87,9 +87,10 @@ body {
 
 #First-Page-Image{
 	position: absolute;
+	width: 54.7rem;
 	
     right: 0;
-	top: -5.5px;
+	top: 0;
     z-index: 1; /* Ajuste este valor conforme necessário */
 }
 
@@ -124,11 +125,27 @@ h4{
 		
 }
 
+#Section-Poster{
+	width: 100%;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	background-color: #001F29;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#Section-Poster-Image{
+	width: 40rem;
+	border-radius: 1rem;
+}
+
+
 #Main-First-Page{
-	margin-top: 4rem;
-	margin-bottom: 6rem;
-	max-width: 90rem;
-	min-width: 22.5rem;
+	width: 100%;
+
+	position: relative;
 }
 
 #First-Page{
@@ -138,6 +155,8 @@ h4{
 	justify-content: center;
 
 	gap: 4rem;
+	padding-top: 4rem;
+	padding-bottom: 6rem;
 
 }
 
@@ -216,6 +235,8 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 
 #Main-Second-Page{
 	margin-top: -8px;
+	padding: 4rem;
+	padding-bottom: 0;
 	width: 100%;
 	background-color: #001F29;
 
@@ -229,7 +250,7 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 22rem;
+  width: 20%;
   border-radius: 1em;
   background-color: var(--white);
   color: gray;
@@ -270,6 +291,7 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 
 .content {
   padding: 1.8em;
+  min-height: 220px;
 }
 
 .content-button {
@@ -327,12 +349,11 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 6rem;
-	row-gap: 6.5rem;
+	gap: 2rem;
+	row-gap: 4rem;
 
 	padding-top: 6.5rem;
 	padding-bottom: 4.5rem;
-	width: 80%;
 	flex-direction: row;
 	flex-wrap: wrap;
 	height: fit-content;
@@ -525,7 +546,7 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 	padding-top: 4rem;
 	padding-bottom: 1.8rem;
 	background: linear-gradient(60deg, #001F29, #004059);
-	width: 100%;
+	width: 100vw;
   }
 
   #Title-Wrapper{
@@ -539,7 +560,7 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
 	background-position: center;
 	padding-top: 4rem;
 	padding-bottom: 6rem;
-	width: 100%;
+	width: 100vw;
 	display: flex;
 	justify-content: center;
   }
@@ -555,7 +576,7 @@ transform: translateY(4px); /* Move o botão para baixo ao clicar */
   }
 
   #title-app{
-	max-width: 600px;
+	max-width: 900px;
 	text-align: left;
   }
 
@@ -862,19 +883,27 @@ strong{
 	background-color: #001F29;
 }
 
-#Title-Benefits{
+.Title-Benefits{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 }
 
-#Text-Title-Beneftis{
+.Text-Title-Beneftis{
 	font-size: 2rem;
 	letter-spacing: 4px;
 	color: #0092CC;
 	width: 100%;
 	min-width: 320px;
+}
+
+#benefits-1{
+    min-width: 560px;
+}
+
+#title-benefits-1{
+	width: 87%;
 }
 
 .Rounded{
@@ -1120,8 +1149,8 @@ strong{
 	flex-direction: row;
 	justify-content: start;
 	align-items: center;
-	
-	width: auto;
+	gap: 8px;
+	width: 100%;
 }
 
 .Line-Desc h5{
@@ -1323,4 +1352,8 @@ textarea.form-control {
 #poster-image{
 	border-radius: 6px;
 	width: 28rem;
+}
+
+.text-description{
+	width: 90%;
 }
