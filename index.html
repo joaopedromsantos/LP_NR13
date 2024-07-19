@@ -31,11 +31,7 @@
     <title>Elite NR13</title>
 </head>
 <body>
-    <section id="Section-Poster">
-      <img id="Section-Poster-Image" src="media/poster.webp" />
-    </section>
     <section id="Main-First-Page">
-        <img id="First-Page-Image" src="media/background_first_page.webp" />
         <section id="First-Page">
             <img id="logo_1" src="media/Logo-horizontal-1.webp" />
             <div id="First-Page-Content">
@@ -52,21 +48,29 @@
                         </h4>
                     </div>
 
-                    <a id="button_1">
+                    <a id="button_1_desktop">
                         <button class="Button" onclick="redirecionar()">
                             QUERO PARTICIPAR!
                         </button>
-                    </a>
+                    </a>                    
                 </div>
-                <div class="container-video">
-                  <iframe src="https://www.youtube.com/embed/rnMOn5mc4qc?si=lvjS0pv2Zwcc10SB&autoplay=1&amp;start=3" 
-                          title="YouTube video player" 
-                          frameborder="0" 
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                          referrerpolicy="strict-origin-when-cross-origin">
-                  </iframe>
-              </div>
-              
+                <img id="Section-Poster-Image" src="media/poster.webp" />
+                <a id="button_1_mobile">
+                  <button class="Button" onclick="redirecionar()">
+                      QUERO PARTICIPAR!
+                  </button>
+                </a>
+            </div>
+            <div id="First-Page-Content-2">
+              <h3 id="Text-Video">VEJA O VÍDEO E ENTENDA COMO ESSE CURSO VAI MUDAR O RUMO DA SUA CARREIRA</h3>
+              <div id="Container-Video" class="container-video">
+                <iframe src="https://www.youtube.com/embed/rnMOn5mc4qc?si=lvjS0pv2Zwcc10SB&autoplay=1&amp;start=3" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </div>
             </div>
         </section>
 
@@ -91,7 +95,7 @@
             <div class="card" id="card-2">
                 <div class="header" id="header-2"></div>
                 <div class="content">
-                  <h5 class="title-card">APLICATIVO EXCLUSIVO</h5>
+                  <h5 class="title-card">Aplicativo Exclusivo</h5>
                   <p class="text">Utilização do App Inspetor Industrial, que faz toda a inspeção roteirizada e muito mais</p>
                 </div>
                 <div class="content-button">
@@ -377,28 +381,22 @@
           <h2 class="Text-Title-Beneftis"> + BENEFÍCIOS</h2>
         <div class="Rounded"></div> 
       </div>
-      <div class="Container-Benefits" id="Container-Benefits">
-        <img class="Benefits-Image" src="media/clientes_medio.webp" />
-        <div class="Box-Text-Benefits">
-          <h2>TENHA MAIS CLIENTES</h2>
-          <h3>Explore táticas comprovadas para atrair 
-            uma nova clientela. Desde estratégias de marketing digital 
-            até um atendimento excepcional, descubra como construir e 
-            fidelizar uma base sólida de clientes.</h3>
-        </div>
-      </div>
-
-      <div class="Container-Benefits" id="Container-Benefits-Reverse">
-        <div class="Box-Text-Benefits">
-          <h2>3 MESES DE MENTORIA</h2>
-          <h3>Tem alguma dúvida? Precisa relembrar algum conceito? 
-            Está se sentindo inseguro nas primeiras análises? Conte 
-            com o nosso apoio por meio da nossa mentoria exclusiva, 
-            tanto individual quanto em grupo.</h3>
-        </div>
-        <img class="Benefits-Image" src="media/mentoria_media.webp" />
-      </div>
       
+      <div id="Container-Benefits">
+        <div id="Benefits-card-1" class="Div-Benefits">
+          <svg xmlns="http://www.w3.org/2000/svg" width="8rem" height="8rem" viewBox="0 0 24 24"><path fill="none" stroke="#E5E5E5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M7 18v-1a5 5 0 0 1 5-5v0a5 5 0 0 1 5 5v1M1 18v-1a3 3 0 0 1 3-3v0m19 4v-1a3 3 0 0 0-3-3v0m-8-2a3 3 0 1 0 0-6a3 3 0 0 0 0 6m-8 2a2 2 0 1 0 0-4a2 2 0 0 0 0 4m16 0a2 2 0 1 0 0-4a2 2 0 0 0 0 4"/></svg>
+          <h3>FAÇA PARTE DE UMA COMUNIDADE EXCLUSIVA DE INSPETORES</h3>
+        </div>
+        <div class="Div-Benefits">
+          <svg xmlns="http://www.w3.org/2000/svg" width="8rem" height="8rem" viewBox="0 0 24 24"><path fill="none" stroke="#E5E5E5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0-8 0M6 21v-2a4 4 0 0 1 4-4h3m8 0h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3H17m2 0v1m0-8v1"/></svg>
+          <h3>CONQUISTE UMA CARTEIRA DE CLIENTES</h3>
+          <h4>Aprenda a prospectar corretamente seus clientes, explore estratégias comprovadas para atrair novas clientes.</h4>
+        </div>
+        <div class="Div-Benefits">
+          <svg xmlns="http://www.w3.org/2000/svg" width="8rem" height="8rem" viewBox="0 0 24 24"><path fill="none" stroke="#E5E5E5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="m12 22l-2-6H2l2 6zm0 0h4m-4-9v-.5c0-1.886 0-2.828-.586-3.414S9.886 8.5 8 8.5s-2.828 0-3.414.586S4 10.614 4 12.5v.5m15 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0m-9-9a2 2 0 1 1-4 0a2 2 0 0 1 4 0m4 13.5h6a2 2 0 0 1 2 2v.5a2 2 0 0 1-2 2h-1" color="currentColor"/></svg>
+          <h3>3 MESES DE MENTORIA EXCLUSIVA</h3>
+        </div>
+      </div>
 
     </section>
 

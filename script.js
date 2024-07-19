@@ -9,6 +9,18 @@ function redirecionar() {
     distance: '40%'
   });
 
+  ScrollReveal().reveal('#Text-Video', {
+    origin: 'left',
+    duration: 1200,
+    distance: '40%'
+  });
+
+  ScrollReveal().reveal('#Container-Video', {
+    origin: 'left',
+    duration: 2000,
+    distance: '90%'
+  });
+
   ScrollReveal().reveal('#Curse-Name', {
     origin: 'left',
     duration: 1300,
